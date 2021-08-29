@@ -158,6 +158,12 @@ namespace surfm.tool {
             }
         }
 
+        public static float measureDistance(Component a, Component b) {
+            Vector3 av = a.transform.position;
+            Vector3 bv = b.transform.position;
+            return Vector3.Distance(av,bv);
+        }
+
 
     }
 }
